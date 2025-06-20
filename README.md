@@ -1,12 +1,44 @@
-# React + Vite
+# WonderRush Tours
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, user-friendly tour booking web app built with **React + TypeScript** and powered by a **PocketBase** backend.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Beautiful, responsive frontend with a friendly color scheme
+- Book tours with custom details (name, email, dates, package, etc.)
+- PocketBase backend for fast, simple data storage
+- Clean code structure for easy maintenance and scaling
+- Test scripts for backend integration
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React, TypeScript, Vite, CSS (Poppins font, custom palette)
+- **Backend:** PocketBase (self-hosted, lightweight)
+- **Other:** Test scripts, modular code
+
+## 📦 Project Structure
+
+```
+WonderRush/
+├── public/                # Static assets
+├── src/
+│   ├── components/        # React UI components (Navbar, Header, etc.)
+│   ├── datas/             # Types, test scripts, data utilities
+│   ├── pb/                # PocketBase API integration
+│   ├── pictures/          # Images
+│   ├── App.tsx            # Main app
+│   └── index.css          # Global styles
+├── .gitignore
+├── package.json
+├── README.md
+└── tsconfig.json
+```
+
+## 📝 Customization
+
+- Edit color scheme and fonts in `index.css` and component CSS files.
+- Add new fields or features by updating the types in `src/datas/types.ts` and the PocketBase schema.
+
+## 📄 License
+
+MIT
