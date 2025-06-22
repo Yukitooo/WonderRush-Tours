@@ -1,0 +1,7 @@
+.headerPicture{
+    height: 90vh;
+    background: url('src/pictures/homeImage.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
