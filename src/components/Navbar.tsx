@@ -1,10 +1,10 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import "./Navbar.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  
   return (
     <>
       <div className="navbar">
@@ -26,40 +26,39 @@ function Navbar() {
         <div className={`navlinks${menuOpen ? " show" : ""}`}>
           <ul>
             <li>
-              <a href="#home" className="home">
+              <Link to="/home" className="home" onClick={() => setMenuOpen(false)}>
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#bangkok" className="bangkok">
+              <Link to="/bangkok" className="bangkok" onClick={() => setMenuOpen(false)}>
                 Bangkok
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#pattaya" className="pattaya">
+              <Link to="/pattaya" className="pattaya" onClick={() => setMenuOpen(false)}>
                 Pattaya
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#ratchaburi" className="ratchaburi">
+              <Link to="/ratchaburi" className="ratchaburi" onClick={() => setMenuOpen(false)}>
                 Ratchaburi
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#kanchanaburi" className="kanchanaburi">
+              <Link to="/kanchanaburi" className="kanchanaburi" onClick={() => setMenuOpen(false)}>
                 Kanchanaburi
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#packages" className="packages">
+              <Link to="/packages" className="packages" onClick={() => setMenuOpen(false)}>
                 Packages
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="contact">
-                {" "}
+              <Link to="/contact" className="contact" onClick={() => setMenuOpen(false)}>
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

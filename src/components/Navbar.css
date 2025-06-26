@@ -7,6 +7,8 @@
 
 .navbar{
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background-color: white;
   height: 6em;
@@ -90,73 +92,41 @@
   transform: translateY(-0.51em) rotate(-45deg);
 }
 
-/* Responsive Navbar */
 
-
-@media (max-width: 700px) {
-
-  .burger{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
+@media (max-width: 430px){
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
   }
 
-  .companyName{
+  .companyName {
+    width: 100%;
+    font-size: 2.3em;
+    margin-bottom: 0.2em;
+  }
+
+  .navlinks {
     width: 100%;
     justify-content: center;
+    display: none;
+    margin-right: 0px
+  }
+
+  .show{
+    display: block;
+  }
+
+  .navlinks ul {
+    flex-direction: row;
     align-items: center;
-    margin: 0;
-  }
-  .navlinks{
-    display:none;
-  }
-}
-
-@media (max-width: 900px) {
-
-  .companyName{
-    width: 100%;
     justify-content: center;
-    align-items: center;
     gap: 0.5em;
+    
   }
+
   .burger {
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .navbar{
-    gap: 2px;
-  }
-  .navlinks {
-    position: absolute;
-    top: 6em;
-    right: 0;
-    left: 0;
-    background: aquamarine;
-    flex-direction: row;
-    align-items: center;
-    width: 100vw;
-    padding: 1.5em 0 2em 0;
-    gap: 0.5em;
-    display: none;
-    z-index: 10;
-    box-shadow: 0 4px 16px rgba(83, 177, 177, 0.10);
-    scrollbar-color: transparent transparent;
-  }
-  .navlinks.show {
-    display: flex;
-  }
-  .navlinks ul {
-    font-size: 1rem;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow: scroll;
-    gap: 1em;
-    align-items: center;
   }
 }
 
